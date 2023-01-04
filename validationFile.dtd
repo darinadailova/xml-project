@@ -1,0 +1,70 @@
+<!ELEMENT catalogue (vendors, cpus, gpus, laptops, computers)>
+
+<!ELEMENT vendors (vendor+)>
+<!ELEMENT vendor (vendorName)>
+<!ATTLIST vendor vendorId ID #REQUIRED>
+<!ELEMENT vendorName (#PCDATA)>
+
+<!ELEMENT cpus (cpu+)>
+<!ELEMENT cpu (model, cores, threads, clock_speed, cache, instruction_set)*>
+<!ATTLIST cpu
+        cpuId ID #REQUIRED
+        vendorId IDREF #REQUIRED>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT cores (#PCDATA)>
+<!ELEMENT threads (#PCDATA)>
+<!ELEMENT clock_speed (#PCDATA)>
+<!ELEMENT cache (#PCDATA)>
+<!ELEMENT instruction_set (#PCDATA)>
+
+<!ELEMENT gpus (gpu+)>
+<!ELEMENT gpu (model, clock_speed, memory, memory_clock, directx, opengl)*>
+<!ATTLIST gpu
+        gpusId ID #REQUIRED
+        vendorId IDREF #REQUIRED>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT clock_speed (#PCDATA)>
+<!ELEMENT memory (#PCDATA)>
+<!ELEMENT memory_clock (#PCDATA)>
+<!ELEMENT directx (#PCDATA)>
+<!ELEMENT opengl (#PCDATA)>
+
+<!ELEMENT laptops (laptop+)>
+<!ELEMENT laptop (model, ram, hdd, display, network, interfaces, os, battery, optical, warrant)*>
+<!ATTLIST laptop
+        laptopId ID #REQUIRED
+        vendorId IDREF #REQUIRED
+        cpuId IDREF #REQUIRED
+        gpusId IDREF #REQUIRED>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT hdd (#PCDATA)>
+<!ELEMENT display (#PCDATA)>
+<!ELEMENT optical (#PCDATA)>
+
+<!ELEMENT network (#PCDATA)>
+<!ELEMENT interfaces (usb, displayport)*>
+<!ELEMENT usb (#PCDATA)>
+<!ELEMENT displayport (#PCDATA)>
+<!ELEMENT os (#PCDATA)>
+<!ELEMENT warranty (#PCDATA)>
+<!ELEMENT battery (#PCDATA)>
+
+<!ELEMENT computers (computer+)>
+<!ELEMENT computer (model, ram, hdd, monitor, network, interfaces, os, optical, warranty)*>
+<!ATTLIST computer
+        computerId ID #REQUIRED
+        vendorId IDREF #REQUIRED
+        cpuId IDREF #REQUIRED
+        gpusId IDREF #REQUIRED>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT hdd (#PCDATA)>
+<!ELEMENT monitor (#PCDATA)>
+<!ELEMENT optical (#PCDATA)>
+<!ELEMENT network (#PCDATA)>
+<!ELEMENT interfaces (usb, displayport)*>
+<!ELEMENT usb (#PCDATA)>
+<!ELEMENT displayport (#PCDATA)>
+<!ELEMENT os (#PCDATA)>
+<!ELEMENT warranty (#PCDATA)>

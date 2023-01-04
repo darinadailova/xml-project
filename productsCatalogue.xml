@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- todo add pictures to products??? -->
+
+<!DOCTYPE catalogue SYSTEM "validationFile.dtd">
+
+<catalogue>
+<!--==========================Vendors=================================-->
+    <vendors>
+		<vendor vendorId="v0000">
+            <vendorName>Intel</vendorName>
+        </vendor>
+		<vendor vendorId="v0001">
+            <vendorName>AMD</vendorName>
+        </vendor>
+		<vendor vendorId="v0002">
+            <vendorName>Dell</vendorName>
+        </vendor>
+		<vendor vendorId="v0003">
+            <vendorName>Asus</vendorName>
+        </vendor>
+		<vendor vendorId="v0004">
+            <vendorName>NVIDIA</vendorName>
+        </vendor>
+	</vendors>
+
+<!--==========================CPUS=================================-->
+	<cpus>
+		<cpu cpuId="c0000" vendorId = "v0000">
+			<model>i3-3217U</model>
+			<cores>2</cores>
+			<threads>4</threads>
+			<clock_speed>1.8GHz</clock_speed>
+			<cache>3MB</cache>
+			<instruction_set>64-bit</instruction_set>
+		</cpu>
+		<cpu cpuId="c0001" vendorId = "v0000">
+			<model>i5-3317U</model>
+			<cores>2</cores>
+			<threads>4</threads>
+			<clock_speed>1.7GHz</clock_speed>
+			<cache>3MB</cache>
+			<instruction_set>64-bit</instruction_set>
+		</cpu>
+		<cpu cpuId="c0002" vendorId = "v0000">
+			<model>i7-2630QM</model>
+			<cores>4</cores>
+			<threads>8</threads>
+			<clock_speed>2GHz</clock_speed>
+			<cache>6MB</cache>
+			<instruction_set>64-bit</instruction_set>
+		</cpu>
+        <cpu cpuId="c0003" vendorId = "v0000">
+            <model>i7-3770K</model>
+            <cores>4</cores>
+            <threads>8</threads>
+            <clock_speed>3.9GHz</clock_speed>
+            <cache>8MB</cache>
+            <instruction_set>64-bit</instruction_set>
+        </cpu>
+        <cpu cpuId="c0004" vendorId = "v0000">
+            <model>i5-3570K</model>
+            <cores>4</cores>
+            <threads>4</threads>
+            <clock_speed>3.8GHz</clock_speed>
+            <cache>6MB</cache>
+            <instruction_set>64-bit</instruction_set>
+        </cpu>
+        <cpu cpuId="c0005" vendorId = "v0001">
+            <model>Quad-Core A10</model>
+            <cores>4</cores>
+            <threads>4</threads>
+            <clock_speed>3.4GHz</clock_speed>
+            <cache>3MB</cache>
+            <instruction_set>64-bit</instruction_set>
+        </cpu>
+	</cpus>
+
+<!--==========================GPUS=================================-->
+    <gpus>
+        <gpu gpusId="g0000" vendorId = "v0004">
+            <model>GeForce GTX 560M </model>
+            <clock_speed>746 MHZ</clock_speed>
+            <memory>2GB </memory>
+            <memory_clock>5100 MHZ</memory_clock>
+            <directx>11</directx>
+            <opengl>4.0</opengl>
+        </gpu>
+		  <gpu gpusId="g0001" vendorId = "v0003">
+            <model>GF GTX 670</model>
+            <clock_speed>746 MHZ</clock_speed>
+            <memory>2GB </memory>
+            <memory_clock>5100 MHZ</memory_clock>
+            <directx>11</directx>
+            <opengl>4.0</opengl>
+        </gpu>
+		 <gpu gpusId="g0002" vendorId = "v0003">
+            <model>GF GTX 670</model>
+            <clock_speed>915 MHZ</clock_speed>
+            <memory>2GB </memory>
+            <memory_clock>6000 MHZ</memory_clock>
+            <directx>11.2</directx>
+            <opengl>4.2</opengl>
+        </gpu>
+		 <gpu gpusId="g0003" vendor = "v0003">
+            <model>GF GTX 680</model>
+            <clock_speed>1006 MHZ</clock_speed>
+            <memory>2GB </memory>
+            <memory_clock>6000 MHZ</memory_clock>
+            <directx>11.2</directx>
+            <opengl>4.2</opengl>
+        </gpu>
+		<gpu gpusId="g0004" vendorId = "v0001">
+            <model>AMD HD7970</model>
+            <clock_speed>1000 MHZ</clock_speed>
+            <memory>6GB </memory>
+            <memory_clock>6000 MHZ</memory_clock>
+            <directx>11.2</directx>
+            <opengl>4.2</opengl>
+        </gpu>
+    </gpus>
+
+<!--==========================Laptops=================================-->
+	<laptops>
+        <laptop laptopId = "L0000" vendorId = "v0002" cpuId = "c0000" gpusId = "g0000">
+            <model>5323</model>
+            <ram>4GB (1x 4096MB) - DDR3, 1600MHz</ram>
+            <hdd>500GB SATA (5400 rpm)</hdd>
+            <display>13.3(33.78 cm.) 1366x768</display>
+            <network>LAN 10/100/1000, Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Linux Ubuntu 11.10</os>
+            <battery>6-клетъчна батерия (5200 mAh)</battery>
+        </laptop>
+        <laptop laptopId = "L0001" vendorId = "v0002" cpuId = "c0001" gpusId = "g0001">
+            <model>5521</model>
+            <ram>4GB (1x 4096MB) - DDR3, 1600MHz</ram>
+            <hdd>500GB SATA (5400 rpm)</hdd>
+            <display>15.6 (39.62 ) - 1366x768</display>
+            <optical>DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Linux Ubuntu 11.10</os>
+            <battery>6-клетъчна батерия (5200 mAh)</battery>
+        </laptop>
+        <laptop laptopId = "L0002" vendorId = "v0003" cpuId = "c0001" gpusId = "g0001">
+            <model>3521</model>
+            <ram>4GB (1x 4096MB) - DDR3, 1600MHz</ram>
+            <hdd>750GB SATA (5400 оборота/минута)</hdd>
+            <display>15.6-инчов (39.62 см.) - 1366x768, гланцов</display>
+            <optical>DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <usb>1x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Microsoft Windows 8 (64-битова)</os>
+            <warranty>24 месеца международна гаранция</warranty>
+            <battery>6-клетъчна батерия (5200 mAh)</battery>
+        </laptop>
+        <laptop laptopId = "L0003" vendorId = "v0002" cpuId = "c0004" gpusId = "g0001">
+            <model>3521</model>
+            <ram>4GB (1x 4096MB) - DDR3, 1600MHz</ram>
+            <hdd>750GB SATA (5400 оборота/минута)</hdd>
+            <display>15.6-инчов (39.62 см.) - 1366x768, гланцов</display>
+            <optical>DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <usb>1x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Microsoft Windows 8 (64-битова)</os>
+            <warranty>24 месеца международна гаранция</warranty>
+            <battery>6-клетъчна батерия (5200 mAh)</battery>
+        </laptop>
+        <laptop laptopId = "L0004" vendorId = "v0003" cpuId = "c0001" gpusId = "g0000">
+            <model>3521</model>
+            <ram>4GB (1x 4096MB) - DDR3, 1600MHz</ram>
+            <hdd>750GB SATA (5400 оборота/минута)</hdd>
+            <display>15.6-инчов (39.62 см.) - 1366x768, гланцов</display>
+            <optical>DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <usb>1x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Microsoft Windows 8 (64-битова)</os>
+            <warranty>24 месеца международна гаранция</warranty>
+            <battery>6-клетъчна батерия (5200 mAh)</battery>
+        </laptop>
+        <laptop laptopId = "L0005" vendorId = "v0003" cpuId = "c0002" gpusId = "g0002">
+            <model>3521</model>
+            <ram>8GB (2x 4096MB) - DDR3, 1333MHz</ram>
+            <hdd>1TB (500GB + 500GB) SATA (7200 оборота/минута)</hdd>
+            <display>15.6-инчов (39.62 см.) - 1366x768, 3D гланцов дисплей</display>
+            <optical>Blu-ray четец, DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <usb>1x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Microsoft Windows 8 (64-битова)</os>
+            <warranty>24 месеца международна гаранция</warranty>
+            <battery>8-клетъчна батерия (5200 mAh)</battery>
+        </laptop>
+    </laptops>
+
+<!--==========================Computers=================================-->
+    <computers>
+        <computer computerId = "pc0000" vendorId = "v0000" cpuId = "c0000" gpusId = "g0000">
+            <model>5323</model>
+            <ram>2x4GB DDR3 1600MHz Corsair Vengeance CMZ8GX3M2A1600C9</ram>
+            <hdd>3000GB WD Caviar® Green™, SATA 6Gb/s, 7200rpm max, 64MB</hdd>
+            <monitor>23" (58.42 cm) ASUS VG236HE 120Hz FULL HD 3D</monitor>
+            <network>LAN 10/100/1000, Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Linux Ubuntu 11.10</os>
+        </computer>
+        <computer computerId = "pc0001" vendorId = "v0005" cpuId = "c0001" gpusId = "g0000">
+            <model>5521</model>
+            <ram>2x4GB DDR3 1600MHz Corsair Vengeance CMZ8GX3M2A1600C9</ram>
+            <hdd> 1000GB Seagate Pipeline HD, SATA2, 5900rpm, 64MB</hdd>
+            <monitor>24" (60.96 cm) ASUS ML249H, MVA panel, FULL HD, </monitor>
+            <optical>DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Linux Ubuntu 11.10</os>
+        </computer>
+        <computer computerId = "pc0002" vendorId = "v0002" cpuId = "c0002" gpusId = "g0003">
+            <model>3521</model>
+            <ram>2x4GB DDR3 1600MHz Corsair Vengeance CMZ8GX3M2A1600C9</ram>
+            <hdd>750GB SATA (5400 оборота/минута)</hdd>
+            <monitor>30" (76.20 cm) DELL UltraSharp U3011, IPS panel, </monitor>
+            <optical>DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <usb>1x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Microsoft Windows 8 (64-битова)</os>
+            <warranty>24 месеца международна гаранция</warranty>
+        </computer>
+        <computer computerId = "pc0003" vendorId = "v0002" cpuId = "c0003" gpusId = "g0002">
+            <model>3521</model>
+            <ram>2x4GB DDR3 1600MHz Corsair Vengeance CMZ8GX3M2A1600C9</ram>
+            <hdd>750GB SATA (5400 оборота/минута)</hdd>
+            <monitor>27" (68.58 cm) ASUS VK278Q FULL HD LED, 2ms, 10 </monitor>
+            <optical>DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <usb>1x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Microsoft Windows 8 (64-битова)</os>
+            <warranty>24 месеца международна гаранция</warranty>
+        </computer>
+        <computer computerId = "pc0004" vendorId = "v0002" cpuId = "c0005" gpusId = "g0001">
+            <model>3521</model>
+            <ram>2x4GB DDR3 1600MHz Corsair Vengeance CMZ8GX3M2A1600C9</ram>
+            <hdd>3000GB WD Caviar® Green™, SATA 6Gb/s, 7200rpm max, 64MB</hdd>
+            <monitor>27" (68.58 cm) ASUS VK278Q FULL HD LED, 2ms, 10 </monitor>
+            <optical>DVD записвачка</optical>
+            <network>LAN 10/100/1000 , Wi-Fi 802.11 b/g/n, Bluetooth 4.0</network>
+            <interfaces>
+                <usb>3x USB 3.0</usb>
+                <usb>1x USB 3.0</usb>
+                <displayport>HDMI</displayport>
+            </interfaces>
+            <os>Microsoft Windows 8 (64-битова)</os>
+            <warranty>24 месеца международна гаранция</warranty>
+        </computer>
+	</computers>
+</catalogue>
